@@ -1,0 +1,23 @@
+{
+  "name": "k6_loadtestex",
+  "version": "1.0.0",
+  "description": "Instalar K6\r //Windows\r     winget install k6 \r //Linux\r     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C5AD17C747E3415A3642D57D77C6C491D6AC1D69\r     echo \"deb https://dl.k6.io/deb stable main\" | sudo tee /etc/apt/sources.list.d/k6.list\r     sudo apt-get update\r     sudo apt-get install k6\r Acessar pasta do Projeto\r     cd C:\\Users\\marcelo.alves\\Documents\\LoadTest_K6\r Iniciar npm\r     npm intin -y\r Instalar modulo do k6 dentro da pasta do Projeto\r     npm install k6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvesma2017/K6_LoadTestEx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvesma2017/K6_LoadTestEx/issues"
+  },
+  "homepage": "https://github.com/alvesma2017/K6_LoadTestEx#readme",
+  "dependencies": {
+    "k6": "^0.0.0"
+  }
+}
