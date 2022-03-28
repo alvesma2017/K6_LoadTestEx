@@ -13,3 +13,7 @@ Iniciar npm
     npm init -y
 Instalar modulo do k6 dentro da pasta do Projeto
     npm install k6
+
+    ./prometheus --config.file=prometheus.yml
+
+K6_PROMETHEUS_REMOTE_URL=http://localhost:9090/api/v1/write ./k6 run cenarios/basic.js --config config/stages.json -o output-prometheus-remote

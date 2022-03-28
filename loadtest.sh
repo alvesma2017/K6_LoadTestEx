@@ -1,0 +1,1 @@
+K6_PROMETHEUS_REMOTE_URL=http://localhost:9090/api/v1/write ./k6 run index.js --config config/stages.json -o output-prometheus-remote

@@ -1,10 +1,10 @@
-import GetCustomer from "./cenarios/http_get.js";
+import GetTest from "/cenarios/basic.js";
 import {group , sleep} from 'k6';
 
 
 export default () => {
-    group('Endpoint Get Customer - Controller Customer - OnionArchitecture.Api', () => {
-        GetCustomer();
+    group('LoadTest - PeekTest', () => {
+        GetTest();
     });
 
     sleep(1);
