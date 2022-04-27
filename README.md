@@ -1,5 +1,5 @@
 # K6_LoadTestEx
-Instalar K6
+//Instalar K6
 //Windows
     winget install k6 
 //Linux
@@ -13,7 +13,14 @@ Iniciar npm
     npm init -y
 Instalar modulo do k6 dentro da pasta do Projeto
     npm install k6
+    
+//Procedimentos para execução:
+    //Alterar rampas no arquivo config/stages.json
+    //Executar os comandos abaixo no terminal (GIT)
 
-    ./prometheus --config.file=prometheus.yml
-
-$ K6_PROMETHEUS_REMOTE_URL=http://localhost:9090/api/v1/write ./k6 run index.js --config config/stages.json -o output-prometheus-remote
+        Login
+        K6 run index_login.js --config config/stages.json --insecure-skip-tls-verify
+        Chave Pix
+        K6 run index_pix.js --config config/stages.json --insecure-skip-tls-verify
+        Onboarding
+        K6 run index_onboard.js --config config/stages.json --insecure-skip-tls-verify
